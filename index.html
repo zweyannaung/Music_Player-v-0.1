@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=" shortcut icon" href="#" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container min-vh-100 d-flex flex-column  justify-content-center align-items-center">
+      <div class=" playList">
+        <div class=" playingMusic_container d-flex flex-column align-items-center mb-5"></div>
+        <div><audio src="" class="play_audio"></audio></div>
+      </div>
+      <div class="music_control">
+        <div class="mx-auto">
+          <div class=" text-center  fs-6 text-white-50"><span class="music_current_time">00:00</span> / <span class="music_time">00:00</span></div>
+          <div id="progress-bar">
+            <div id="current_progress"></div>
+          </div>
+        </div>
+        <div class=" control_button d-flex justify-content-around mx-auto mt-3">
+          <i class="fa-solid fa-backward-step text-white play_previous"></i>
+          <i class="fa-regular fa-circle-pause text-white d-none play_pause"></i>
+          <i class="fa-regular fa-circle-play text-white play_play"></i>
+          <i class="fa-solid fa-forward-step text-white play_next"></i>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+@import './node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #343a40
+}
+.musicTitle_byOne{
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 2px solid rgb(250, 132, 151);
+    width: 350px;
+    color: orange;
+    
+}
+.musicTitle_byOne:hover{
+    background: #394047;
+    border-radius: 10px;
+    transition: 800ms;
+}
+.playList{
+    width: 400px;
+}
+.control_button {
+    width: 350px;
+}
+i{
+    font-size: 30px;
+    cursor: pointer;
+}
+#progress-bar{
+    width: 400px;
+    height: 3px;
+    background: #7e6060;
+}
+#current_progress{
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 50, 50);
+}
